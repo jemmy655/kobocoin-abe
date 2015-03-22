@@ -142,10 +142,10 @@ The datadir directive can include a new chain's basic configuration,
 e.g.:
 
     datadir += [{
-            "dirname": "/home/weeds/testnet",
-            "chain":   "Weeds",
-            "code3":   "WDS",
-            "address_version": "o" }]
+            "dirname": "/home/weeds/kobocoin",
+            "chain":   "Kobocoin",
+            "code3":   "KOBO",
+            "address_version": "\u0023" }]
 
 Note that "+=" adds to the existing datadir configuration, while "="
 replaces it.  For help with address_version, please open doc/FAQ.html
