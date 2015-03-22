@@ -14,8 +14,14 @@
 # License along with this program.  If not, see
 # <http://www.gnu.org/licenses/agpl.html>.
 
-from .X11Chain import X11Chain
-from .PpcPosChain import PpcPosChain
+from . import BaseChain
 
-class X11PosChain(X11Chain, PpcPosChain):
-    pass
+class X15Chain(BaseChain):
+    """
+    A blockchain that hashes block headers using the X15 algorithm.
+    The current implementation requires the xcoin_hash module.
+    """
+
+    def block_header_hash(chain, header):
+        import x15_hash
+        return x15_hash.getPoWHash(header)

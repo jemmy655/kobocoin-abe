@@ -25,8 +25,11 @@ import os
 import re
 import errno
 import logging
+import struct
 
 import SqlAbstraction
+from dateutil import parser
+import time
 
 import Chain
 
@@ -83,11 +86,12 @@ CHAIN_CONFIG = [
     {"chain":"Darkcoin"},
     {"chain":"BlackCoin"},
     {"chain":"Unbreakablecoin"},
+#     {"chain":"Kobocoin"},
     #{"chain":"",
     # "code3":"", "address_version":"\x", "magic":""},
     ]
 
-NULL_PUBKEY_HASH = "\0" * Chain.PUBKEY_HASH_LENGTH
+NULL_PUBKEY_HASH = "\0" * 32
 NULL_PUBKEY_ID = 0
 PUBKEY_ID_NETWORK_FEE = NULL_PUBKEY_ID
 

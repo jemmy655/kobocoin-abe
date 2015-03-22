@@ -221,5 +221,5 @@ class BaseChain(object):
     def script_hash(chain, script):
         return chain.pubkey_hash(script)
 
-    datadir_conf_file_name = "bitcoin.conf"
-    datadir_rpcport = 8332
+    datadir_conf_file_name = "Kobocoin.conf"
+    datadir_rpcport = 3341

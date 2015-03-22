@@ -14,8 +14,19 @@
 # License along with this program.  If not, see
 # <http://www.gnu.org/licenses/agpl.html>.
 
-from .X11Chain import X11Chain
-from .PpcPosChain import PpcPosChain
+from .X15PosChain import X15PosChain
+from .NvcChain import NvcChain
+from .. import util
 
-class X11PosChain(X11Chain, PpcPosChain):
-    pass
+class Kobocoin(X15PosChain, NvcChain):
+    def __init__(chain, **kwargs):
+        chain.name = 'Kobocoin'
+        chain.code3 = 'KOBO'
+        chain.address_version = '\x23'
+        chain.script_addr_vers = '\x1c'
+        chain.magic = "\xa1\xa0\xa2\xa3"
+        super(Kobocoin, chain).__init__(**kwargs)
+
+    def has_feature(chain, feature):
+	datadir_conf_file_name = 'Kobocoin.conf'
+	datadir_rpcport = 3341
