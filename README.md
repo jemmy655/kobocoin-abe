@@ -1,14 +1,7 @@
-Abe: a free block chain browser for Bitcoin-based currencies.
-https://github.com/bitcoin-abe/bitcoin-abe
+Welcome to Kobocoin-Abe!
+========================
 
-    Copyright(C) 2011,2012,2013 by Abe developers.
-    License: GNU Affero General Public License, see the file LICENSE.txt.
-    Portions Copyright (c) 2010 Gavin Andresen, see bct-LICENSE.txt.
-
-Welcome to Abe!
-===============
-
-This software reads the Bitcoin block file, transforms and loads the
+This software reads the Kobocoin block file, transforms and loads the
 data into a database, and presents a web interface similar to Bitcoin
 Block Explorer, http://blockexplorer.com/.
 
@@ -62,6 +55,9 @@ Bitleu (a Scrypt-Jane coin) depends on the yac_scrypt module.
 
 Copperlark (a Keccak coin) depends on the sha3 module available via
 "easy_install pysha3".
+
+Kobocoin (an X15 PoW/PoS coin) depends on the x15_hash module available
+from https://kobocoin/x15_hash.
 
 License
 -------
@@ -164,8 +160,4 @@ More information
 Please see TODO.txt for a list of what is not yet implemented but
 would like to be.
 
-Forum thread: https://bitcointalk.org/index.php?topic=22785.0
-Newbies: https://bitcointalk.org/index.php?topic=51139.0
-
-Donations appreciated: 1PWC7PNHL1SgvZaN7xEtygenKjWobWsCuf (BTC)
-NJ3MSELK1cWnqUa6xhF2wUYAnz3RSrWXcK (NMC)
+Forum thread: https://bitcointalk.org/index.php?topic=920290.0
