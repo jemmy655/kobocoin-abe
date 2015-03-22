@@ -57,7 +57,7 @@ Copperlark (a Keccak coin) depends on the sha3 module available via
 "easy_install pysha3".
 
 Kobocoin (an X15 PoW/PoS coin) depends on the x15_hash module available
-from https://kobocoin/x15_hash.
+from https://github.com/kobocoin/x15_hash.
 
 License
 -------
