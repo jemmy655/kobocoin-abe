@@ -136,13 +136,13 @@ To display Namecoin, NovaCoin, or any block chain with data somewhere
 other than the default Bitcoin directory, specify "datadir" in
 abe.conf, e.g.:
 
-    datadir = /home/bitcoin/.namecoin
+    datadir = /home/myhome/.Kobocoin
 
 The datadir directive can include a new chain's basic configuration,
 e.g.:
 
     datadir += [{
-            "dirname": "/home/weeds/kobocoin",
+            "dirname": "/home/myhome/.Kobocoin",
             "chain":   "Kobocoin",
             "code3":   "KOBO",
             "address_version": "\u0023" }]
