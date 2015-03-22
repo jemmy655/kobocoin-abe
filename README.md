@@ -1,4 +1,4 @@
-Welcome to Kobocoin-Abe!
+Welcome to Kobocoin Abe!
 ========================
 
 This software reads the Kobocoin block file, transforms and loads the
